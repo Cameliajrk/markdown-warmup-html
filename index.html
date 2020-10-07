@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Camélia Jarek</h1>
-        <p>"Let your smile change the world, but don't let the world change your smile." </p>
-    <img src="Camelia.jpg">
+    <div class=intro>
+        <h1>Camélia Jarek</h1>
+        <img src="Camelia.jpg">
+        <p class="citation">"Let your smile change the world, but don't let the world change your smile." </p>
+    </div>
     <h2>I love meeting new people and learning new things about a lot of subjects.</h2>
     <table border=1>
         <tr>
@@ -25,10 +28,16 @@
         </tr>
         <tr>
            <th>Pineapple on pizza?</th>
-           <td>No</td>
+           <td>
+                <FORM>
+                <INPUT type="checkbox" name="yes" value="1"> Yes
+                <INPUT type="checkbox" name="no" value="2" checked> No
+                </FORM>
+            </td>
         </tr>
     </table>
-    <h3>Hobbies</h3>
+    <div class="contenu">
+        <h3>Hobbies</h3>
         <ol>
             <li>Travel</li>
             <li>Shopping
@@ -44,12 +53,16 @@
             <li>Adventure</li>
             <li>Water activities</li>
         </ol>
-    <h3>You can always count on me when...</h3>
+    </div>
+    <div class="contenu"> 
+        <h3>You can always count on me when...</h3>
         <ul>
             <li>...you need help, whether it's professionnal or private</li>
             <li>...you want some thrill (at an amusement park for example)</li>
         </ul>
-    <h3>A funny story</h3>
+    </div>
+    <div class="contenu">
+        <h3>A funny story</h3>
         <p>
             I had to attend a one day training at a place that I didn't know. At this time, I was moving by bus and I was following the road with the GPS on my phone. I start walking from the bus stop and noticed that the cars were running fast. Then I realised that I was on a highway parcel... (just a few minutes, luckily).
         </p>
@@ -57,5 +70,11 @@
         <p>
             I walked on the highway once because of my GPS.
         </p>
+    </div>
+    <div class="navigation">
+            <a href="https://bertrand2.github.io/markdown-warmup-html/"> Previous</a>
+            | Camélia Jarek |
+            <a href="https://iCarolinei.github.io/mardown-warmup-html/">Next </a>
+    </div>
 </body>
 </html>
